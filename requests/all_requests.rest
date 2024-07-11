@@ -2,13 +2,27 @@ POST http://localhost:3001/api/notes
 Content-Type: application/json
 
 {
-    "content": "rest client is a handy tool",
+    "content": "For tesing deleting an object",
     "important": false
 }
+
 ###
-DELETE http://localhost:3001/api/notes/668d76356c7ffede6d98535d
+GET http://localhost:3001/api/notes
+
 ###
 GET http://localhost:3001/api/notes/668d76356c7ffede6d98535d
 
 ###
-GET http://localhost:3001/api/notes
+GET http://localhost:3001/api/notes/668d76356c7ffede6d985352
+
+###
+PUT http://localhost:3001/api/notes/668d3b14a6c7728ef2b49e00
+Content-Type: application/json
+
+{
+    "content": "CSS is not that hard actually",
+    "important": false
+}
+
+###
+DELETE http://localhost:3001/api/notes/668f85cbb953d6f6ac2311bc
